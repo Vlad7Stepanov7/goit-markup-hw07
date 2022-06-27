@@ -1,0 +1,32 @@
+.list-works {
+display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.list-works__items {
+ margin: 15px;
+    transition: box-shadow 250ms $cubic-bezier;
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+                0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+    } 
+}
+.list-works__container {
+padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+.list-works__title {
+margin-bottom: 4px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.list-works__text {
+font-size: 16px;
+    line-height: 1.87;
+}

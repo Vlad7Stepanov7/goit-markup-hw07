@@ -1,0 +1,17 @@
+.logo {
+    font-family: $complementary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #000000;
+}
+.logo__text {
+    color: $accent-color;
+}
+.logo__footer {
+    display: inline-block;
+        margin-bottom: 20px;
+        color: #ffffff;
+}

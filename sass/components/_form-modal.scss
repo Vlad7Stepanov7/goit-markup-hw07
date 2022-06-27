@@ -1,0 +1,119 @@
+.form-modal {
+    width: 448px;
+}
+.form-modal__title {
+    margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+}
+.form-modal__data-field {
+    margin-bottom: 10px;
+}
+.form-modal__data-label {
+    position: relative;
+        text-align: start;
+        display: block;
+}
+.form-modal__text {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: $praimary-color-text;
+}
+.form-modal__data-input {
+    display: block;
+        width: 448px;
+        height: 40px;
+        padding-top: 12px;
+        padding-left: 42px;
+        padding-bottom: 12px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border 250ms $cubic-bezier;
+
+        &:focus {
+            border: 1px solid $accent-color;
+        }
+}
+.form-modal__icon {
+    position: absolute;
+        top: 50%;
+        left: 12px;
+        width: 18px;
+        height: 18px;
+        transition: fill 250ms $cubic-bezier;
+
+        .form-modal__data-input:focus + & {
+            fill: $accent-color;
+        }
+}
+.form-modal__textarea-feild {
+    margin-bottom: 20px;
+}
+.form-modal__textarea-label {
+    position: relative;
+        text-align: start;
+        display: block;
+}
+.form-modal__textarea {
+    display: block;
+        width: 448px;
+        height: 120px;
+        resize: none;
+        padding: 12px 16px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+
+        &::placeholder {
+            font-size: 12px;
+                line-height: 1.16;
+                letter-spacing: 0.01em;
+                color: rgba(117, 117, 117, 0.5);
+        }
+}
+.treaty-agreement {
+    margin-bottom: 30px;
+}
+.treaty-agreement__label {
+display: flex;
+    justify-content: center;
+}
+.treaty-agreement__input {
+    position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+}
+.treaty-agreement__icon {
+    display: block;
+        width: 16px;
+        height: 15px;
+        border: 1px solid #000;
+        border-radius: 4px;
+        transition: background-color 250ms $cubic-bezier,
+            border-color 250ms $cubic-bezier;
+
+        .treaty-agreement__input:checked + & {
+            background-color: $accent-color;
+                border-color: $accent-color;
+        }
+}
+.treaty-agreement__text {
+    margin-left: 8.38px;
+}
+.treaty-agreement__link {
+    color: $accent-color;
+}
+.form-modal__button {
+   @extend %button;
+ padding-left: 55px;
+ padding-right: 55px;
+}
